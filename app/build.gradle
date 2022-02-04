@@ -65,9 +65,12 @@ dependencies {
 
     // retrofit
     def retrofitVersion = "2.9.0"
+    def okhttp3Version = "4.9.1"
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
     implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
     implementation 'com.google.code.gson:gson:2.8.6'
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp3Version"
+    implementation "com.squareup.okhttp3:okhttp:$okhttp3Version"
 
     // Glide
     implementation 'com.github.bumptech.glide:glide:4.12.0'
