@@ -22,13 +22,13 @@
 
     <style name="paragraph1">
         <item name="android:textSize">14dp</item>
-        <item name="android:textColor">@android:color/secondary_text_material_light</item>
+        <item name="android:textColor">@color/secondary_text_default_material_light</item>
         <item name="android:textStyle">normal</item>
     </style>
 
     <style name="paragraph2">
         <item name="android:textSize">10dp</item>
-        <item name="android:textColor">@android:color/secondary_text_material_light</item>
+        <item name="android:textColor">@color/secondary_text</item>
         <item name="android:textStyle">normal</item>
     </style>
 </resources>
