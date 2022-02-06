@@ -22,14 +22,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         setupRv()
 
-        NetworkXProvider.isInternetConnectedLiveData.observe(this, {isOnline->
-            Timber.e("device is online? $isOnline")
-            if (isOnline)
-                setOnlineAdapterData()
-            else
-                Timber.e("device is offline")
-                setOfflineAdapterData()
-        })
+        val isOnline = NetworkXProvider.isInternetConnected
+        if (isOnline)
+            setOnlineAdapterData()
+        else{
+            Timber.e("device is offline")
+            setOfflineAdapterData()
+        }
+        setOfflineAdapterData()
     }
 
     private fun setupRv(){
