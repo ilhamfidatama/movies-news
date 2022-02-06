@@ -2,26 +2,19 @@ package com.ilham.detikcom_test.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.recyclerview.widget.AsyncListDiffer
-import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.ilham.detikcom_test.databinding.MovieItemBinding
 import com.ilham.detikcom_test.model.Movie
 
 class MovieAdapter: RecyclerView.Adapter<MovieAdapter.Holder>() {
-    val diffCallback = object : DiffUtil.ItemCallback<Movie>() {
-        override fun areItemsTheSame(oldItem: Movie, newItem: Movie): Boolean {
-            return oldItem.id == newItem.id
-        }
+    private val movies = mutableListOf<Movie>()
 
-        override fun areContentsTheSame(oldItem: Movie, newItem: Movie): Boolean {
-            return oldItem.hashCode() == newItem.hashCode()
-        }
+    fun submitMovies(movies: MutableList<Movie>) {
+        this.movies.clear()
+        this.movies.addAll(movies)
+        notifyDataSetChanged()
     }
-
-    val differ = AsyncListDiffer(this, diffCallback)
-
-    fun submitMovies(movies: MutableList<Movie>) = differ.submitList(movies)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder = Holder(
         MovieItemBinding.inflate(
@@ -32,10 +25,10 @@ class MovieAdapter: RecyclerView.Adapter<MovieAdapter.Holder>() {
     )
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        holder.bind(differ.currentList[position])
+        holder.bind(movies[position])
     }
 
-    override fun getItemCount(): Int = differ.currentList.size
+    override fun getItemCount(): Int = movies.size
 
     inner class Holder(private val binding: MovieItemBinding): RecyclerView.ViewHolder(binding.root){
         fun bind(movie: Movie){

@@ -12,4 +12,5 @@ import com.ilham.detikcom_test.model.Movie
 @TypeConverters(Converters::class)
 abstract class MovieDatabase: RoomDatabase() {
     abstract fun getMovieDao(): MovieDAO
+
 }

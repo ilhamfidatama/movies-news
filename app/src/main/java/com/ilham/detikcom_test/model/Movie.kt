@@ -8,8 +8,6 @@ data class Movie(
     val title: String = "",
     val overview: String = "",
     val release_date: String = "",
-    val poster_path: String = ""
-) {
     @PrimaryKey(autoGenerate = false)
     var id: Int = 0
-}
+)
