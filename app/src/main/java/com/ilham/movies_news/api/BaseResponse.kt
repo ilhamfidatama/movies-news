@@ -1,6 +1,6 @@
-package com.ilham.detikcom_test.api
+package com.ilham.movies_news.api
 
-import com.ilham.detikcom_test.model.Movie
+import com.ilham.movies_news.model.Movie
 
 data class BaseResponse(
     val page: Int,

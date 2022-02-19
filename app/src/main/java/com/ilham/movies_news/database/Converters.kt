@@ -1,4 +1,4 @@
-package com.ilham.detikcom_test.database
+package com.ilham.movies_news.database
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory

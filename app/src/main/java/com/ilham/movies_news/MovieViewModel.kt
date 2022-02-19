@@ -1,8 +1,8 @@
-package com.ilham.detikcom_test
+package com.ilham.movies_news
 
 import androidx.lifecycle.*
-import com.ilham.detikcom_test.api.BaseResponse
-import com.ilham.detikcom_test.model.Movie
+import com.ilham.movies_news.api.BaseResponse
+import com.ilham.movies_news.model.Movie
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import retrofit2.Response

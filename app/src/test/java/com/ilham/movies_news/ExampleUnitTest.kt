@@ -1,4 +1,4 @@
-package com.ilham.detikcom_test
+package com.ilham.movies_news
 
 import org.junit.Test
 

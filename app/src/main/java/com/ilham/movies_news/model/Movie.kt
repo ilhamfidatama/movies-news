@@ -1,4 +1,4 @@
-package com.ilham.detikcom_test.model
+package com.ilham.movies_news.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

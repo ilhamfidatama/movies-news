@@ -1,9 +1,9 @@
-package com.ilham.detikcom_test.database
+package com.ilham.movies_news.database
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.ilham.detikcom_test.model.Movie
+import com.ilham.movies_news.model.Movie
 
 @Database(
     entities = [Movie::class],

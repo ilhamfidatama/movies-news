@@ -1,11 +1,10 @@
-package com.ilham.detikcom_test.adapter
+package com.ilham.movies_news.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.ilham.detikcom_test.databinding.MovieItemBinding
-import com.ilham.detikcom_test.model.Movie
+import com.ilham.movies_news.databinding.MovieItemBinding
+import com.ilham.movies_news.model.Movie
 
 class MovieAdapter: RecyclerView.Adapter<MovieAdapter.Holder>() {
     private val movies = mutableListOf<Movie>()

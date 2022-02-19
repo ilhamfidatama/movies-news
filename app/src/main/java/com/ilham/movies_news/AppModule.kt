@@ -1,8 +1,8 @@
-package com.ilham.detikcom_test
+package com.ilham.movies_news
 
 import android.content.Context
 import androidx.room.Room
-import com.ilham.detikcom_test.database.MovieDatabase
+import com.ilham.movies_news.database.MovieDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -1,6 +1,5 @@
-package com.ilham.detikcom_test.api
+package com.ilham.movies_news.api
 
-import retrofit2.Call
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

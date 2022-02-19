@@ -1,9 +1,9 @@
-package com.ilham.detikcom_test
+package com.ilham.movies_news
 
-import com.ilham.detikcom_test.api.BaseResponse
-import com.ilham.detikcom_test.api.RetrofitInstance
-import com.ilham.detikcom_test.database.MovieDAO
-import com.ilham.detikcom_test.model.Movie
+import com.ilham.movies_news.api.BaseResponse
+import com.ilham.movies_news.api.RetrofitInstance
+import com.ilham.movies_news.database.MovieDAO
+import com.ilham.movies_news.model.Movie
 import retrofit2.Response
 import javax.inject.Inject
 

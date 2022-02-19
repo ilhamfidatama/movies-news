@@ -1,6 +1,6 @@
-package com.ilham.detikcom_test
+package com.ilham.movies_news
 
-import com.ilham.detikcom_test.model.Movie
+import com.ilham.movies_news.model.Movie
 
 interface Listener {
     fun onSuccess(movies: MutableList<Movie>)

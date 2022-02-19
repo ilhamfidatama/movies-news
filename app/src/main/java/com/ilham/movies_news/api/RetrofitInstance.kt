@@ -1,6 +1,6 @@
-package com.ilham.detikcom_test.api
+package com.ilham.movies_news.api
 
-import com.ilham.detikcom_test.BuildConfig
+import com.ilham.movies_news.BuildConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

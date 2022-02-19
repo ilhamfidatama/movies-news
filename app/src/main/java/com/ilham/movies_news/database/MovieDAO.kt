@@ -1,11 +1,11 @@
-package com.ilham.detikcom_test.database
+package com.ilham.movies_news.database
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.ilham.detikcom_test.model.Movie
+import com.ilham.movies_news.model.Movie
 
 @Dao
 interface MovieDAO {

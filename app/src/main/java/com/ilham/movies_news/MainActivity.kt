@@ -1,11 +1,11 @@
-package com.ilham.detikcom_test
+package com.ilham.movies_news
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.ilham.detikcom_test.adapter.MovieAdapter
-import com.ilham.detikcom_test.databinding.ActivityMainBinding
+import com.ilham.movies_news.adapter.MovieAdapter
+import com.ilham.movies_news.databinding.ActivityMainBinding
 import com.rommansabbir.networkx.NetworkXProvider
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
